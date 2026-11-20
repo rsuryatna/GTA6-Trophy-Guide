@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en" data-theme="paper">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI (PS5)</title>
+<meta name="description" content="A trophy tracker and guide for Grand Theft Auto VI on PlayStation 5: all 55 official trophies, a roadmap to the platinum, missable warnings, and a next-up planner. Works offline.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23d24e2a'/%3E%3Ctext x='32' y='44' font-size='36' font-family='Georgia,serif' font-weight='bold' fill='white' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <div class="mark" aria-hidden="true">L</div>
+    <div>
+      <h1>Leonida Trophy Guide</h1>
+      <p class="sub">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies &middot; 1 platinum, 2 gold, 6 silver, 46 bronze</p>
+    </div>
+  </div>
+  <div class="top-actions">
+    <label class="spoiler-toggle" title="Hide story trophies until you earn them">
+      <input type="checkbox" id="spoilerToggle"> <span>Spoilers off</span>
+    </label>
+    <button id="themeToggle" type="button" title="Switch between the paper and night looks">Night theme</button>
+  </div>
+</header>
+
+<section class="progress" aria-label="Progress">
+  <div class="progress-head">
+    <strong id="progressText">0 of 55 earned</strong>
+    <span id="progressByGrade"></span>
+  </div>
+  <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="55" aria-valuenow="0" id="progressBar"><div class="fill" id="progressFill"></div></div>
+  <p class="hint">Progress is saved in this browser only. Export it from Settings so you never lose it.</p>
+</section>
+
+<nav class="tabs" aria-label="Views">
+  <button type="button" data-view="checklist" class="active">Checklist</button>
+  <button type="button" data-view="roadmap">Roadmap</button>
+  <button type="button" data-view="missables">Missables <span class="count" id="missableCount"></span></button>
+  <button type="button" data-view="planner">Next up</button>
+  <button type="button" data-view="settings">Settings &amp; sources</button>
+</nav>
+
+<main id="view" aria-live="polite"></main>
+
+<footer class="foot">
+  <p>Names, descriptions and grades are the official PlayStation 5 list (frozen 18 Nov 2026), as published on Exophase and cross-checked on PSNProfiles. Earn rates are from Exophase, snapshot 20 Nov 2026 (44,161 players tracked). Guide text is our own advice written from the official descriptions; anything not yet checked in the game is marked as such in the guide itself.</p>
+  <p>This is an unofficial fan-made guide. It is not affiliated with Rockstar Games and uses no Rockstar artwork or logos.</p>
+</footer>
+
+<dialog id="detail" class="detail">
+  <div class="detail-body" id="detailBody"></div>
+</dialog>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
